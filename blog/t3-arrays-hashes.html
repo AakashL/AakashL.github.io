@@ -1,0 +1,28 @@
+In many programming languages, arrays serve as a way to store a list of items, which can later be manipulated with various methods. Each object in an array has a corresponding numbered key, the first object in an array has a key of 0, the second has a key of 1, etc.
+
+A handy thing about information in arrays is that once it's organized in an array, you can use methods to iterate over an array to achieve multiple results.  Here's an example based on the Pine reading:
+
+<code>
+colors = ['Red', 'Orange', 'Yellow']
+colors.each do color
+  puts 'I love + color + '!''
+ end
+</code>
+
+Calling on an individual item in the array can be done like this:
+<code>color[0]</code> which would output 'Red'.
+
+The Ruby docs contain many more useful sorts of iterators and array methods which can be used to manipulate arrays in all sorts of ways.
+
+Hashes in Ruby are very similar to arrays, however instead of each object having a numbered key starting at 0, they can be mapped to anything as key. Here's an example of a hash called my_info:
+
+<code>
+my_info = {
+  :first_name => 'Aakash' ,
+  :last_name => 'Lakhotia' ,
+  :hometown => 'Tracy' ,
+  :age => 24
+}
+</code>
+
+One big benefit of hashes is being able to name your own keys, making calling upon a particular element as easy as remembering what name you set to it, versus a number value.
