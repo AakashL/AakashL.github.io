@@ -10,20 +10,19 @@ a:visited {
 	color: #E84A5F;
 }
 
-a:link {
-	color: #FECEA8;
-}
+
 h1 {
 	font-family: Arial;
 }
 
 h2 {
 	font-family: Arial;
-	color: #FFFFFF;
 }
 
 #welcome {
+ 	font-family: Arial;
 	left: 0px;
+	color: white;
 }
 
 nav > h1 {
