@@ -72,7 +72,9 @@ p {
 p, a {
 	font-family: Roboto;
 }
-
+nav a {
+	color: #E84A5F;
+}
 a:visited {
 	color: #E84A5F;
 }
