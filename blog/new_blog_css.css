@@ -33,25 +33,27 @@ nav ul li {
 
 article {
 	float: left;
-	width: 630px;
+	width: 960px;
 	background-color: #666;
 
 }
 
-article section {
+article #left_section {
 	float: left;
-	width: 600px;
-	margin: 0 0 10px 0;
+	width: 425px;
+	margin: 0 0 10px 15px;
 	background-color:  #CCC;
 	padding: 0 15px 0 15px;
 }
 
-aside {
-	float: left;
-	width: 315px;
+article #right_section {
+	float: right;
+	width: 425px;
+	margin: 0 15px 10px 0;
 	background-color:  #CCC;
-	padding: 0 15px 0 0;
+	padding: 0 15px 0 15px;
 }
+
 
 footer {
 	clear: both;

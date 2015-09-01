@@ -3,7 +3,7 @@ class Character
 	attr_reader :name, :type;
 	attr_accessor :strength, :magic, :archery;
 
-	def initialize(name, type, strength, magic, archery)
+	def initialize(name, type, strength, magic, archery) 
 		@name = name
 		@type = type
 		@strength = strength
@@ -25,7 +25,6 @@ class Character
 		@magic += 1;
 		puts "Congratulations, you've just gained a magic level!"
 	end
-
 
 end
 
