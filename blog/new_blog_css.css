@@ -67,17 +67,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Arial;
 	font-weight: lighter;
 }
+
 p {
 	line-height: 23px;
 }
 
 p, a {
 	font-family: Roboto;
-}
-nav a {
 	color: #E84A5F;
 }
+
+a {
+	color: #E84A5F;
+}
+
+
 a:visited {
+	color: #E84A5F;
+}
+
+a:link {
 	color: #E84A5F;
 }
 

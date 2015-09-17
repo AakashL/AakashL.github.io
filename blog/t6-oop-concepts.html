@@ -26,22 +26,68 @@
 </br>
 </br>
 </br>
-      <h1>OOP Concepts</h1>
+      <h1>Variable Scope in Ruby</h1>
       <h4>September 4, 2015</h4>
   <section>
       
-
     <p>
-    	So far in my Ruby programming I've been mostly using the buuilt in methods on differnt objects in Ruby, this week we learned about how to create our own classes with their own unqiye methods. With this new strategy, we are able to create our own objects, and define different methods with which we can manipulate them.
-		<br><br>
-		<img src="http://i.imgur.com/XPy6E5k.png">
-		<br><br>
-      In the code above, I created a simple class called "Character", which is initialized with a name, type, and a few levels. These are stored as instance variables. As opposed to local variables which are only available within the method they are defined in, instance variables start with @ and are bound to each particular instance of a class. You can see an example of this in the level_magic method, in which I increment an instance variable defined earlier.
-      <br>
+      In programming a variable's scope refers to in which parts of the program the variable's value is accessible. Now that we've covered classes, we've seen all of the difference scopes of variables.
 
-      By creating classes, I can create as many new Characters as I wish, each with their own unique attributes, which can be manipulated using the methods defined within their class. There's always room for expansion and adding more methods for increased functionality. 
+      In Ruby there are four different variable scopes, and each type is declared differently according to the formatting below:
 
+      <table border = "1">
+        <tr>
+         <td> <b>Name Begins With</b> </td>
+         <td> <b>Scope</b> </td>
+        </tr>
+
+        <tr>
+         <td> $ </td>
+         <td> Global </td>
+        </tr>
+
+        <tr>
+         <td> @ </td>
+         <td> Instance </td>
+        </tr>
+
+        <tr>
+         <td> [a-z] or _ </td>
+         <td> Local </td>
+        </tr>
+
+        <tr>
+         <td> [A-Z] </td>
+         <td>  Constant </td>
+        </tr>
+
+        <tr>
+         <td> @@ /td>
+         <td>  Class </td>
+        </tr>
+
+      </table>
     </p>
 
+    <h2> Usage Examples </h2>
+
+    <h3> Local Variables </h3>
+    <p> Local variables are locally reference-able within the construct they were created in. An example of this is inside and outside methods. Local variables defined inside a method cannot be modified or read outside the method, and the reverse for local variables defined outside of a method. </p>
+
+    <h3> Global Variables </h3>
+    <p>
+      Global variables are accessible anywhere within the program. On top of this, they are also modifiable from anywhere within the program too. w3schools: "You can set it anywhere, you can get it anywhere".
+    </p>
+
+    <h3> Instance Variables </h3>
+    <p>
+      Instance variables are local to specific instances of an object. Each instance of a particular object can have it's own value for an instance variable defined in that class.
+    </p>
+
+    <h3> Class Variables </h3>
+    <p>
+      Unlike instance variables, a class variable is shared amongst all instances of a particular class. If one object in the class changes the value of a class variable, it's changed for all instances of the class.
+    </p>
+    </p>
   </section>
 </main>
