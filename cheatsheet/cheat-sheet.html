@@ -34,7 +34,7 @@
 					On this page will be a cheat-sheet on JS constructors, and links to resources I found to be helpful.
 				</p>
 			</section>
-			<h2>Creating a Prototype</h2>
+			<h2>Creating a Constructor Function</h2>
 			<pre><code>
 			function user(first, last, join_date, referral_site) {
 				this.firstName = first;
@@ -44,7 +44,30 @@
 			}
 			</code></pre>
 
+			<h2>Creating new objects</h2>
+			<pre><code>
+				var user1 = new user("Aakash", "Lakhotia, "01-08-2012", "TRiBot");
+				var user1 = new user("John", "Conrad, "08-22-2014", "OSBot");
+			</code></pre>
 
+			<h2>Adding methods</h2>
+			<pre><code>
+			function user(first, last, join_date, referral_site) {
+				this.firstName = first;
+				this.lastName = last;
+				this.joinDate = join_date;
+				this.referral_site = referral_site
+				this.sayName = function() {
+					return 'Hi, my name is ' + this.firstName + ' ' + this.lastName'
+				}
+			}
+
+			var user1 = new user("Aakash", "Lakhotia, "01-08-2012", "TRiBot");
+
+			user1.sayName
+			//'Hi, my name is Aakash Lakhotia'
+			</code></pre>
+			
 			<section>
 				asdfasdf
 			</section>
